@@ -1,0 +1,140 @@
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Dance Studio | Feel The Rhythm
+    meta(name="description" content="Join Dance Studio and explore your passion for dance.")
+    link(rel="stylesheet" href="/css/style.css")
+
+  body
+    //- Navbar
+    nav.navbar
+      a.logo(href="/") DANCE<span>STUDIO.</span>
+      ul.nav-links
+        li
+          a(href="#home") Home
+        li
+          a(href="#about") About
+        li
+          a(href="#classes") Classes
+        li
+          a(href="#trainers") Trainers
+        li
+          a(href="#contact") Contact
+      a.nav-btn(href="#contact") Join Us
+
+    //- Hero Section
+    header.hero#home
+      .hero-content
+        p.tagline WELCOME TO DANCE STUDIO
+        h1 Feel The Beat.
+          br
+          span Live The Dance.
+        p.hero-text Dance is more than movement. It's an expression of your passion, energy and creativity.
+        .hero-buttons
+          a.btn-primary(href="#classes") Explore Classes
+          a.btn-outline(href="#about") Discover More
+
+    //- About Section
+    section.about#about
+      .about-image
+        img(src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=900" alt="Dancers performing")
+      .about-content
+        p.tagline ABOUT OUR STUDIO
+        h2 Dance Is The
+          br
+          span Language Of Soul
+        p Welcome to Dance Studio! We believe everyone has a dancer inside them. Our studio helps you discover your talent, improve your skills and express yourself through dance.
+        p Join our community and turn your passion into confidence.
+        a.btn-primary(href="#classes") Learn More
+
+    //- Classes Section
+    section.classes-section#classes
+      .section-heading
+        p.tagline WHAT WE OFFER
+        h2 Our Dance #[span Classes]
+        p Find your rhythm and choose your favourite dance style.
+
+      .class-grid
+        .class-card
+          img(src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=600" alt="Hip Hop")
+          .card-content
+            h3 Hip Hop
+            p Learn energetic moves, freestyle and street dance.
+            a(href="#contact") Join Class →
+
+        .class-card
+          img(src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=600" alt="Contemporary")
+          .card-content
+            h3 Contemporary
+            p Express your emotions through creative movements.
+            a(href="#contact") Join Class →
+
+        .class-card
+          img(src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=600" alt="Classical Dance")
+          .card-content
+            h3 Classical
+            p Discover traditional dance, grace and discipline.
+            a(href="#contact") Join Class →
+
+        .class-card
+          img(src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600" alt="Bollywood Dance")
+          .card-content
+            h3 Bollywood
+            p Enjoy energetic Bollywood moves and expressions.
+            a(href="#contact") Join Class →
+
+    //- Why Choose Us
+    section.why-us
+      .section-heading
+        p.tagline WHY CHOOSE US
+        h2 Let's Make You A #[span Star]
+      .features
+        .feature
+          .feature-icon 01
+          h3 Expert Training
+          p Learn from experienced dance instructors.
+        .feature
+          .feature-icon 02
+          h3 Friendly Environment
+          p Enjoy dancing in a positive community.
+        .feature
+          .feature-icon 03
+          h3 All Skill Levels
+          p Beginners and advanced dancers are welcome.
+
+    //- Trainers
+    section.trainers#trainers
+      .section-heading
+        p.tagline MEET OUR TEAM
+        h2 Our Dance #[span Trainers]
+      .trainer-grid
+        .trainer-card
+          img(src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500" alt="Dance instructor")
+          h3 Dance Instructor
+          p Contemporary & Hip Hop
+        .trainer-card
+          img(src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500" alt="Dance instructor")
+          h3 Dance Coach
+          p Bollywood & Freestyle
+
+    //- Contact
+    section.contact#contact
+      .contact-content
+        p.tagline START YOUR JOURNEY
+        h2 Ready To #[span Dance?]
+        p Join Dance Studio and take your first step towards your passion.
+        a.btn-primary(href="mailto:hello@dancestudio.com") Contact Us
+
+    //- Footer
+    footer
+      h2.logo DANCE<span>STUDIO.</span>
+      p Feel the music. Live the dance.
+      .footer-links
+        a(href="#home") Home
+        a(href="#about") About
+        a(href="#classes") Classes
+        a(href="#contact") Contact
+      p.copyright © 2026 Dance Studio. All Rights Reserved.

@@ -1,0 +1,393 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #100d19;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  min-height: 80px;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #171222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+}
+
+.logo span {
+  color: #ff4081;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #ddd;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: #ff4081;
+}
+
+.nav-btn, .btn-primary {
+  background: #ff4081;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.nav-btn:hover, .btn-primary:hover {
+  background: #d81b60;
+  transform: translateY(-3px);
+}
+
+/* Hero */
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  background:
+    linear-gradient(90deg, #100d19 15%, rgba(16,13,25,.8) 45%, transparent),
+    url('https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=1600') center/cover;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tagline {
+  color: #ff4081;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 75px);
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero h1 span,
+.about h2 span,
+.section-heading h2 span,
+.contact h2 span {
+  color: #ff4081;
+}
+
+.hero-text {
+  color: #ccc;
+  line-height: 1.9;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+}
+
+/* Common sections */
+section {
+  padding: 90px 8%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-image,
+.about-content {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.about-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.about-content p:not(.tagline) {
+  color: #bbb;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+/* Classes */
+.classes-section,
+.trainers {
+  background: #171222;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+  color: #aaa;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.class-card {
+  background: #241d32;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.class-card:hover {
+  transform: translateY(-8px);
+}
+
+.class-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  color: #ff4081;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.card-content a {
+  color: white;
+  font-size: 13px;
+}
+
+/* Why Choose Us */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature {
+  background: #201a2c;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #ff4081;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  margin-bottom: 12px;
+}
+
+.feature p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Trainers */
+.trainer-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.trainer-card {
+  width: 280px;
+  background: #241d32;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.trainer-card h3 {
+  margin-top: 18px;
+}
+
+.trainer-card p {
+  color: #ff4081;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  background:
+    linear-gradient(rgba(16,13,25,.9), rgba(16,13,25,.9)),
+    url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1400') center/cover;
+}
+
+.contact h2 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.contact p:not(.tagline) {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #171222;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.footer-links a {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ff4081;
+}
+
+.copyright {
+  color: #777;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media(max-width: 1000px) {
+  .class-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hero {
+    min-height: 500px;
+    background-position: 60% center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    height: 300px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .class-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 60px 6%;
+  }
+
+  .about-content h2,
+  .section-heading h2,
+  .contact h2 {
+    font-size: 32px;
+  }
+}
